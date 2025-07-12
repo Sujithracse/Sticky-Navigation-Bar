@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sticky Navigation Bar</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Sticky Navigation Bar */
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #333;
+      color: white;
+      padding: 1em;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Section Styles */
+    section {
+      height: 100vh; /* Full screen height for scroll */
+      padding: 2em;
+    }
+
+    #section1 {
+      background-color: #f4f4f4;
+    }
+
+    #section2 {
+      background-color: #e4e4ff;
+    }
+
+    #section3 {
+      background-color: #d4ffd4;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#section1">Home</a></li>
+      <li><a href="#section2">About</a></li>
+      <li><a href="#section3">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sections -->
+  <section id="section1">
+    <h2>Home</h2>
+    <p>This is the Home section. Scroll down to see the sticky navigation bar in action.</p>
+    <p>Welcome to CodeNest, your go-to destination for clean, responsive, and user-friendly web designs. We specialize in building websites that not only look great but also perform exceptionally well across all devices. Whether you're a student learning to code, a freelancer building your online portfolio, or a business aiming to expand your digital presence — we’re here to help you make it happen.
+
+At CodeNest, we focus on modern web development using HTML, CSS, and JavaScript. Our approach emphasizes simplicity, speed, and accessibility, ensuring that every user has a smooth experience on your site. We believe good design is not just how it looks, but how it works.
+
+Scroll down or use the sticky navigation bar to explore more about who we are, what we do, and how you can get in touch with us. Let’s build something great together!</p>
+  </section>
+
+  <section id="section2">
+    <h2>About</h2>
+    <p>This is the About section. The navbar remains at the top even while scrolling.</p>
+    <p>We are a team of passionate developers, designers, and educators committed to building intuitive and accessible digital experiences. We specialize in front-end technologies and believe in learning by doing.</p>
+    <p>Our journey began in 2018, and since then, we’ve helped countless learners and businesses build beautiful and efficient websites.</p>
+    <h3>Our Mission</h3>
+    <ul>
+      <li>Deliver high-quality, responsive web designs.</li>
+      <li>Empower beginners with easy-to-understand tutorials.</li>
+      <li>Continuously innovate and adapt to web standards.</li>
+    </ul>
+    <p>We believe in open web standards, accessibility for all, and continuous improvement. Whether you're a beginner or a business owner, we're here to help you succeed online.</p>          
+  </section>
+
+  <section id="section3">
+    <h2>Contact</h2>
+    <p>This is the Contact section. Try clicking the nav links to scroll smoothly.</p>
+       <p>We'd love to hear from you! Whether you have a question, feedback, or a project in mind, feel free to reach out.</p>
+    <p><strong>Email:</strong> contact@example.com</p>
+    <p><strong>Phone:</strong> +91 833576784</p>
+  </section>
+
+</body>
+</html>
